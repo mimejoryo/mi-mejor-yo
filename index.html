@@ -1,149 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Mejor Yo · Ebooks de Desarrollo Personal</title>
-  <meta name="description" content="Página oficial de la colección de ebooks de desarrollo personal Mi Mejor Yo. Mentalidad, disciplina, comunicación e inteligencia emocional. Descuentos activos y acceso inmediato por Hotmart." />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Mejor Yo · Ebooks de Desarrollo Personal</title>
+    <meta
+      name="description"
+      content="Página oficial de la colección de ebooks de desarrollo personal Mi Mejor Yo. Mentalidad, disciplina, comunicación e inteligencia emocional. Descuentos activos y acceso inmediato por Hotmart."
+    />
 
-  <!-- Fuente + Tailwind (CDN) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{fontFamily:{sans:["Inter","system-ui","sans-serif"]}}}}</script>
+    <!-- Fuente + Tailwind (CDN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+          },
+        },
+      };
+    </script>
 
-  <!-- Meta Pixel (reemplazá TU_ID_PIXEL) -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'TU_ID_PIXEL');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=TU_ID_PIXEL&ev=PageView&noscript=1"/></noscript>
+    <!-- Meta Pixel (reemplazá TU_ID_PIXEL) -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "TU_ID_PIXEL");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=TU_ID_PIXEL&ev=PageView&noscript=1"
+    /></noscript>
 
-  <style>
-    .lead{font-size:1.125rem;line-height:1.7}
-  </style>
-</head>
-<body class="bg-neutral-50 text-neutral-900 font-sans">
-  <!-- Encabezado minimal (sin links) -->
-  <header class="border-b border-neutral-200 bg-white/80 backdrop-blur">
-    <div class="mx-auto max-w-5xl px-4 py-4 flex items-center gap-3">
-      <div class="h-9 w-9 rounded-2xl bg-black text-white grid place-content-center font-extrabold">MM</div>
-      <div class="font-semibold">Mi Mejor Yo</div>
-    </div>
-  </header>
-
-  <!-- Presentación / Carta de bienvenida -->
-  <section class="relative">
-    <div class="mx-auto max-w-5xl px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-black leading-tight">Libros simples. Cambios reales.</h1>
-        <p class="lead mt-4 text-neutral-700">Esta es mi colección de <strong>ebooks de desarrollo personal</strong> para entrenar <strong>mentalidad</strong>, <strong>disciplina</strong>, <strong>comunicación</strong> e <strong>inteligencia emocional</strong>. Sin humo: contenido claro, ejercicios prácticos y foco en la acción.</p>
-        <div class="mt-5 text-sm text-neutral-600 space-y-1">
-          <p>• Descuentos activos por lanzamiento (cuando haya 2+ títulos, el 2º tendrá 50% OFF).</p>
-          <p>• Comunidad en WhatsApp para compartir avances y mantener la constancia.</p>
-          <p>• Acceso inmediato y garantía por Hotmart.</p>
+    <style>
+      .lead {
+        font-size: 1.125rem;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 font-sans">
+    <!-- Encabezado minimal (sin links) -->
+    <header class="border-b border-neutral-200 bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-5xl px-4 py-4 flex items-center gap-3">
+        <div
+          class="h-10 w-10 rounded-full overflow-hidden border border-neutral-300"
+        >
+          <img
+            src="./media/logo-perfil.png"
+            alt="Logo Mi Mejor Yo"
+            class="h-full w-full object-cover"
+          />
         </div>
+        <div class="font-semibold">Mi Mejor Yo</div>
       </div>
-      <div>
-        <div class="rounded-3xl border border-neutral-200 bg-white shadow-sm overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1400&auto=format&fit=crop" alt="Colección de ebooks" class="w-full h-80 object-cover"/>
-        </div>
-        <p class="mt-2 text-xs text-neutral-500">*Reemplazá la imagen por una de tu marca.</p>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Catálogo en la home (sin navegación a otras páginas; solo botón Comprar) -->
-  <section class="mx-auto max-w-5xl px-4 pb-14">
-    <h2 class="text-2xl md:text-3xl font-semibold">Libros</h2>
-    <p class="mt-2 text-neutral-600">Elegí el tuyo y empezá hoy.</p>
-
-    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Libro disponible (único botón: Comprar) -->
-      <article class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="La Pobreza Empieza en la Mente" class="h-48 w-full object-cover"/>
-        <div class="p-5">
-          <h3 class="font-semibold leading-tight">La Pobreza Empieza en la Mente</h3>
-          <p class="mt-1 text-sm text-neutral-600">Mentalidad financiera, decisiones mínimas y plan de 21 días para salir del cortoplacismo.</p>
-          <ul class="mt-3 text-sm text-neutral-700 space-y-1">
-            <li>• PDF · Acceso inmediato</li>
-            <li>• Lectura en móvil/PC</li>
-            <li>• Actualizaciones incluidas</li>
-          </ul>
-          <div class="mt-4">
-            <button id="buy-ebook-1" onclick="window.location.href='https://pay.hotmart.com/TU_LINK_INDIVIDUAL?utm_source=site&utm_medium=btn&utm_campaign=home_buy'" class="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90 text-sm w-full">Comprar libro</button>
+    <!-- Presentación / Carta de bienvenida -->
+    <section class="relative">
+      <div
+        class="mx-auto max-w-5xl px-4 py-14 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h1 class="text-4xl md:text-5xl font-black leading-tight">
+            Libros simples. Cambios reales.
+          </h1>
+          <p class="lead mt-4 text-neutral-700">
+            Esta es mi colección de
+            <strong>ebooks de desarrollo personal</strong> para entrenar
+            <strong>mentalidad</strong>, <strong>disciplina</strong>,
+            <strong>comunicación</strong> e
+            <strong>inteligencia emocional</strong>. Sin humo: contenido claro,
+            ejercicios prácticos y foco en la acción.
+          </p>
+          <div class="mt-5 text-sm text-neutral-600 space-y-1">
+            <p>
+              • Comunidad en WhatsApp para compartir avances y mantener la
+              constancia.
+            </p>
+            <p>• Acceso inmediato y garantía por Hotmart.</p>
+             <p>
+              • Descuentos activos por lanzamiento (cuando haya 2+ títulos, el
+              2º tendrá 50% OFF).
+            </p>
           </div>
         </div>
-      </article>
-
-      <!-- Próximos libros (sin botones) -->
-      <article class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm opacity-90">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Vivir con Propósito (próximamente)" class="h-48 w-full object-cover"/>
-          <div class="absolute top-3 left-3 text-xs bg-black/80 text-white px-3 py-1 rounded-full">Próximamente</div>
+        <div>
+          <div
+            class="rounded-3xl border border-neutral-200 bg-white shadow-sm overflow-hidden"
+          >
+            <img
+              src="./media/banner-page.jpg"
+              alt="Colección de ebooks"
+              class="w-full h-80 object-cover"
+            />
+          </div>
         </div>
-        <div class="p-5">
-          <h3 class="font-semibold leading-tight">Vivir con Propósito, No con Prisa</h3>
-          <p class="mt-1 text-sm text-neutral-600">Diseño de vida intencional con foco y claridad.</p>
-        </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm opacity-90">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="El Lenguaje Invisible (próximamente)" class="h-48 w-full object-cover"/>
-          <div class="absolute top-3 left-3 text-xs bg-black/80 text-white px-3 py-1 rounded-full">Próximamente</div>
-        </div>
-        <div class="p-5">
-          <h3 class="font-semibold leading-tight">El Lenguaje Invisible</h3>
-          <p class="mt-1 text-sm text-neutral-600">Comunicación efectiva y relaciones sanas.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+    <!-- Catálogo en la home (sin navegación a otras páginas; solo botón Comprar) -->
+    <section class="mx-auto max-w-5xl px-4 pb-14">
+      <h2 class="text-2xl md:text-3xl font-semibold">Libros</h2>
+      <p class="mt-2 text-neutral-600">Elegí el tuyo y empezá hoy.</p>
 
-  <!-- Comunidad (texto sin enlace para cumplir “único botón = comprar”) -->
-  <section class="mx-auto max-w-5xl px-4 pb-14">
-    <div class="rounded-3xl border border-neutral-200 bg-gradient-to-br from-emerald-50 to-cyan-50 p-6">
-      <h2 class="text-xl md:text-2xl font-semibold">Comunidad en WhatsApp</h2>
-      <p class="mt-2 text-neutral-700 text-sm md:text-base">Sumate para compartir avances, retos de 7/21 días y herramientas extra. El enlace de invitación se envía dentro del ebook tras la compra.</p>
-      <p class="mt-1 text-neutral-500 text-xs">*(No hay otros botones en la web para mantenerla simple.)*</p>
-    </div>
-  </section>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Libro disponible (único botón: Comprar) -->
+        <article
+          class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm"
+        >
+          <img
+            src="./media/libro-la-pobreza-empieza-en-la-mente.png"
+            alt="La Pobreza Empieza en la Mente"
+            class="h-90 w-full object-cover"
+          />
+          <div class="p-5">
+            <h3 class="font-semibold leading-tight">
+              La Pobreza Empieza en la Mente
+            </h3>
+            <p class="mt-1 text-sm text-neutral-600">
+              Mentalidad financiera, decisiones mínimas y plan para
+              salir del cortoplacismo.
+            </p>
+            <ul class="mt-3 text-sm text-neutral-700 space-y-1">
+              <li>• Plan de 21 días paso a paso.</li>
+              <li>• Ejercicios prácticos fáciles de aplicar.</li>
+              <li>• Resultados visibles desde la primera semana.</li>
+            </ul>
+            <div class="mt-4">
+              <button
+                id="buy-ebook-1"
+                onclick="window.location.href='https://pay.hotmart.com/TU_LINK_INDIVIDUAL?utm_source=site&utm_medium=btn&utm_campaign=home_buy'"
+                class="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90 text-sm w-full"
+              >
+                Comprar libro
+              </button>
+            </div>
+          </div>
+        </article>
 
-  <!-- Testimonios -->
-  <section class="mx-auto max-w-5xl px-4 pb-16">
-    <h2 class="text-2xl md:text-3xl font-semibold">Lo que dicen los lectores</h2>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
-        <blockquote class="text-sm text-neutral-700">“Claro y accionable. Dejé de postergar y en 1 semana ya tomé decisiones que venía pateando.”</blockquote>
-        <figcaption class="mt-3 text-xs text-neutral-500">— Martina A.</figcaption>
-      </figure>
-      <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
-        <blockquote class="text-sm text-neutral-700">“Me ordenó la cabeza. Ideal si te cuesta empezar, te empuja a moverte.”</blockquote>
-        <figcaption class="mt-3 text-xs text-neutral-500">— Lucas P.</figcaption>
-      </figure>
-      <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
-        <blockquote class="text-sm text-neutral-700">“Contenido simple y potente, sin vueltas. Lo volvería a comprar.”</blockquote>
-        <figcaption class="mt-3 text-xs text-neutral-500">— Sofía R.</figcaption>
-      </figure>
-    </div>
-  </section>
+        <!-- Próximos libros (sin botones) -->
+        <article
+          class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm opacity-90"
+        >
+          <div class="relative">
+            <img
+              src="./media/libro-tu-enemigo-vive-en-tu-cabeza.png"
+              class="h-100 w-full object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 text-xs bg-black/80 text-white px-3 py-1 rounded-full"
+            >
+              Próximamente
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold leading-tight">
+              Tu Enemigo Vive en Tu Cabeza
+            </h3>
+            <p class="mt-1 text-sm text-neutral-600">
+              Cómo vencer tus pensamientos negativos y dejar de autosabotearte. 
+            </p>
+            <ul class="mt-3 text-sm text-neutral-700 space-y-1">
+              <li>• Estrategias simples para manejar emociones.</li>
+              <li>• Técnicas para reducir el estrés.</li>
+              <li>• Inteligencia emocional en acción.</li>
+            </ul>
+            <div class="mt-4">
+              <button
+                disabled
+                id="buy-ebook-1"
+                onclick=""
+                class="px-4 py-2 rounded-xl bg-black text-white opacity-50 text-sm w-full"
+              >
+                Comprar libro
+              </button>
+            </div>
+          </div>
+        </article>
 
-  <footer class="border-t border-neutral-200 py-10 text-center text-sm text-neutral-500">
-    © <span id="year"></span> Mi Mejor Yo · GitHub Pages · Enlaces de pago por Hotmart
-  </footer>
+        <article
+          class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm opacity-90"
+        >
+          <div class="relative">
+            <img
+              src="./media/libro-el-lenguaje-invisible.png"
+              alt="El Lenguaje Invisible (próximamente)"
+              class="h-100 w-full object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 text-xs bg-black/80 text-white px-3 py-1 rounded-full"
+            >
+              Próximamente
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold leading-tight">El Lenguaje Invisible</h3>
+            <p class="mt-6 text-sm text-neutral-600">
+              Claves para una comunicación efectiva y relaciones sanas.
+            </p>
+            <ul class="mt-3 text-sm text-neutral-700 space-y-1">
+              <li>• Cómo expresar lo que sentís sin conflictos.</li>
+              <li>• Escucha activa y empatía avanzada.</li>
+              <li>• Herramientas prácticas para el día a día.</li>
+            </ul>
+            <div class="mt-4">
+              <button
+                disabled
+                id="buy-ebook-1"
+                onclick=""
+                class="px-4 py-2 rounded-xl bg-black text-white opacity-50 text-sm w-full"
+              >
+                Comprar libro
+              </button>
+            </div>
+          </div>
+        </article>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-  <!-- Evento Meta Pixel solo para el botón de compra -->
-  <script>
-    const btn=document.getElementById('buy-ebook-1');
-    if(btn && window.fbq){ btn.addEventListener('click',()=>fbq('track','InitiateCheckout')); }
-  </script>
-</body>
+        <article
+          class="rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-sm opacity-90"
+        >
+          <div class="relative">
+            <img
+              src="./media/libro-vivir-con-proposito-no-con-prisa.png"
+              alt="El Lenguaje Invisible (próximamente)"
+              class="h-100 w-full object-cover"
+            />
+            <div
+              class="absolute top-3 left-3 text-xs bg-black/80 text-white px-3 py-1 rounded-full"
+            >
+              Próximamente
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold leading-tight">Vivir con Propósito, No con Prisa</h3>
+            <p class="mt-1 text-sm text-neutral-600">
+              Claves para tener un rumbo claro y saber hacia donde dirigirnos.
+            </p>
+            <ul class="mt-3 text-sm text-neutral-700 space-y-1">
+              <li>• Cómo definir un propósito real.</li>
+              <li>• Priorizar lo importante sobre lo urgente.</li>
+              <li>• Estrategias para vivir con calma y dirección.</li>
+            </ul>
+            <div class="mt-4">
+              <button
+                disabled
+                id="buy-ebook-1"
+                onclick=""
+                class="px-4 py-2 rounded-xl bg-black text-white opacity-50 text-sm w-full"
+              >
+                Comprar libro
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Comunidad (texto sin enlace para cumplir “único botón = comprar”) -->
+    <section class="mx-auto max-w-5xl px-4 pb-14">
+      <div
+        class="rounded-3xl border border-neutral-200 bg-gradient-to-br from-emerald-50 to-cyan-50 p-6"
+      >
+        <h2 class="text-xl md:text-2xl font-semibold">Comunidad en WhatsApp</h2>
+        <p class="mt-2 text-neutral-700 text-sm md:text-base">
+          Sumate para compartir avances, retos de 7/21 días y herramientas
+          extra. El enlace de invitación se envía tras la
+          compra.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="mx-auto max-w-5xl px-4 pb-16">
+      <h2 class="text-2xl md:text-3xl font-semibold">
+        Lo que dicen los lectores
+      </h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
+          <blockquote class="text-sm text-neutral-700">
+            “Claro y accionable. Dejé de postergar y en 1 semana ya tomé
+            decisiones que venía pateando.”
+          </blockquote>
+          <figcaption class="mt-3 text-xs text-neutral-500">
+            — Martina A.
+          </figcaption>
+        </figure>
+        <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
+          <blockquote class="text-sm text-neutral-700">
+            “Me ordenó la cabeza. Ideal si te cuesta empezar, te empuja a
+            moverte.”
+          </blockquote>
+          <figcaption class="mt-3 text-xs text-neutral-500">
+            — Lucas P.
+          </figcaption>
+        </figure>
+        <figure class="rounded-3xl border border-neutral-200 bg-white p-6">
+          <blockquote class="text-sm text-neutral-700">
+            “Contenido simple y potente, sin vueltas. Lo volvería a comprar.”
+          </blockquote>
+          <figcaption class="mt-3 text-xs text-neutral-500">
+            — Sofía R.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer
+      class="border-t border-neutral-200 py-10 text-center text-sm text-neutral-500"
+    >
+      © <span id="year"></span> Mi Mejor Yo · GitHub Pages · Enlaces de pago por
+      Hotmart
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- Evento Meta Pixel solo para el botón de compra -->
+    <script>
+      const btn = document.getElementById("buy-ebook-1");
+      if (btn && window.fbq) {
+        btn.addEventListener("click", () => fbq("track", "InitiateCheckout"));
+      }
+    </script>
+  </body>
 </html>
