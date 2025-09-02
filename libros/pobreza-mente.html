@@ -8,8 +8,76 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Open Graph / Twitter (reemplazá tu dominio) -->
+  <meta property="og:title" content="La Pobreza Empieza en la Mente · Mi Mejor Yo">
+  <meta property="og:description" content="Ebook práctico para ordenar tu relación con el dinero y pensar a largo plazo.">
+  <meta property="og:image" content="https://tu-dominio/media/og-pobreza-mente.jpg">
+  <meta property="og:url" content="https://tu-dominio/libros/pobreza-mente.html">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Pixel (mismo ID que en el home) -->
   <script>/* pega aquí tu Pixel (init + PageView) */</script>
+
+  <!-- FAQPage JSON-LD (ya lo tenías) -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"¿Cómo recibo el ebook después de pagar?",
+      "acceptedAnswer":{"@type":"Answer","text":"Lo recibís al instante por Hotmart en formato PDF, también llega un correo con el enlace de descarga."}
+    },
+    {
+      "@type":"Question",
+      "name":"¿Lo puedo leer en el celular y en la computadora?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sí. Funciona en móvil, tablet y PC. No necesitás apps especiales."}
+    },
+    {
+      "@type":"Question",
+      "name":"¿Qué pasa si no me gusta?",
+      "acceptedAnswer":{"@type":"Answer","text":"Tenés 7 días de garantía por Hotmart. Si no es para vos, pedís el reembolso y listo."}
+    },
+    {
+      "@type":"Question",
+      "name":"¿Hay algún bono o comunidad incluida?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sí, acceso a la comunidad de WhatsApp para acompañamiento y constancia. Recibís el enlace luego de la compra."}
+    },
+    {
+      "@type":"Question",
+      "name":"¿Qué medios de pago acepta?",
+      "acceptedAnswer":{"@type":"Answer","text":"Hotmart acepta tarjetas y métodos locales según tu país. El pago es seguro."}
+    }
+  ]
+}
+</script>
+
+  <!-- Product JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"La Pobreza Empieza en la Mente",
+  "image":["https://tu-dominio/media/libro-la-pobreza-empieza-en-la-mente.png"],
+  "description":"Guía práctica para salir del cortoplacismo y mejorar tu mentalidad financiera.",
+  "brand":{"@type":"Brand","name":"Mi Mejor Yo"},
+  "sku":"MMY-POBREZA-MENTE",
+  "offers":{
+    "@type":"Offer",
+    "priceCurrency":"USD",
+    "price":"5.99",
+    "availability":"http://schema.org/InStock",
+    "url":"https://tu-dominio/libros/pobreza-mente.html"
+  },
+  "aggregateRating":{
+    "@type":"AggregateRating",
+    "ratingValue":"4.7",
+    "reviewCount":"3"
+  }
+}
+</script>
 </head>
 <body class="bg-neutral-50 text-neutral-900 font-[Inter] overflow-x-hidden">
 
@@ -64,6 +132,7 @@
     <div class="flex items-center gap-1"><span>⚡</span><span>Acceso inmediato</span></div>
     <div class="flex items-center gap-1"><span>🛡️</span><span>Garantía 7 días</span></div>
   </div>
+  
 </div>
 
         </div>
@@ -82,9 +151,9 @@
 
   <!-- OFERTA + CONFIANZA -->
   <section class="mx-auto max-w-5xl px-4 pb-12">
-    <div class="grid md:grid-cols-2 gap-6 items-start">
+    <div class="grid md:grid-cols-2 gap-6 items-skretch">
       <!-- Columna IZQUIERDA: Confianza -->
-      <div class="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center">
+      <div class="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center h-full">
         <h3 class="text-lg md:text-xl font-bold text-emerald-800">Compra sin riesgo ✅</h3>
         <p class="mt-2 text-sm text-neutral-700">7 días de garantía por Hotmart.</p>
         <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
@@ -101,8 +170,8 @@
       </div>
 
       <!-- Columna DERECHA: oferta -->
-      <div class="md:sticky md:top-24">
-        <div id="oferta" class="rounded-2xl border border-amber-300 bg-gradient-to-r from-amber-50 via-amber-100 to-rose-50 p-6">
+      <div class="md:sticky md:top-24 h-full">
+        <div id="oferta" class="rounded-2xl border border-amber-300 bg-gradient-to-r from-amber-50 via-amber-100 to-rose-50 p-6 h-full">
           <div class="flex items-start gap-3">
             <div class="relative">
               <div class="h-10 w-10 rounded-xl bg-amber-600/90 grid place-content-center text-white text-xl">⏰</div>
@@ -111,7 +180,7 @@
             </div>
             <div class="flex-1">
               <h3 class="text-lg md:text-xl font-extrabold text-amber-900">
-                Oferta de lanzamiento — <span class="underline decoration-wavy decoration-rose-400">¡quedan 2 días!</span>
+                Oferta de lanzamiento — <span class="underline decoration-wavy decoration-rose-400">¡termina hoy!</span>
               </h3>
               <p class="mt-1 text-sm text-neutral-700">Precio especial por tiempo limitado.</p>
               <div class="mt-4">
@@ -120,7 +189,7 @@
                 </div>
                 <div class="mt-1 flex items-center justify-between text-xs text-neutral-600">
                   <span>Queda poco</span>
-                  <span class="font-medium text-rose-600">2 días restantes</span>
+                  <span class="font-medium text-rose-600">En <span id="countdown">04:00 hs</span></span>
                 </div>
               </div>
               <div class="mt-4 flex flex-wrap gap-2 text-xs">
@@ -128,6 +197,43 @@
                 <span class="px-2 py-1 rounded-full bg-white/70 border border-amber-200 text-amber-800">Tiempo limitado</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿Es para vos? (entre OFERTA y TESTIMONIOS) -->
+  <section id="para-quien-es" class="mx-auto max-w-5xl px-4 pb-12">
+    <div class="rounded-3xl border border-neutral-200 bg-white shadow-sm overflow-hidden">
+      <div class="px-6 py-8 md:px-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-600/10 text-emerald-700 text-xs font-semibold">
+          🧭 Filtro rápido
+        </div>
+        <h2 class="mt-3 text-2xl md:text-3xl font-extrabold">¿Esto es para vos?</h2>
+        <p class="mt-2 text-neutral-600 text-sm md:text-base">Si marcás 2 o más ✅, este ebook te va a servir.</p>
+
+        <div class="mt-6 grid md:grid-cols-2 gap-3">
+          <div class="flex items-start gap-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
+            <div class="h-7 w-7 rounded-lg bg-emerald-600 text-white grid place-content-center text-sm">✅</div>
+            <p class="text-sm text-neutral-800">Querés <strong>ordenar tu relación con el dinero</strong> sin dietas financieras extremas.</p>
+          </div>
+          <div class="flex items-start gap-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
+            <div class="h-7 w-7 rounded-lg bg-emerald-600 text-white grid place-content-center text-sm">✅</div>
+            <p class="text-sm text-neutral-800">Buscás <strong>pensar a largo plazo</strong> y salir del cortoplacismo.</p>
+          </div>
+          <div class="flex items-start gap-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4">
+            <div class="h-7 w-7 rounded-lg bg-emerald-600 text-white grid place-content-center text-sm">✅</div>
+            <p class="text-sm text-neutral-800">Querés <strong>ejercicios prácticos</strong> para aplicar hoy, no solo teoría.</p>
+          </div>
+
+          <div class="flex items-start gap-3 rounded-2xl border border-rose-200 bg-rose-50/60 p-4">
+            <div class="h-7 w-7 rounded-lg bg-rose-600 text-white grid place-content-center text-sm">❌</div>
+            <p class="text-sm text-neutral-800">Esperás <strong>resultados sin acción</strong>.</p>
+          </div>
+          <div class="flex items-start gap-3 rounded-2xl border border-rose-200 bg-rose-50/60 p-4">
+            <div class="h-7 w-7 rounded-lg bg-rose-600 text-white grid place-content-center text-sm">❌</div>
+            <p class="text-sm text-neutral-800">No vas a <strong>probar nada</strong> en los próximos 7 días.</p>
           </div>
         </div>
       </div>
@@ -186,12 +292,46 @@
   </div>
 </section>
 
+<!-- CTA Final -->
+<section class="mx-auto max-w-5xl px-4 pb-20 text-center">
+  <div class="rounded-3xl bg-gradient-to-r from-amber-500 to-rose-500 p-[2px] shadow-xl">
+    <div class="rounded-3xl bg-white py-10 px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-900">
+        ¿Listo para dar el paso?
+      </h2>
+      <p class="mt-2 text-neutral-600 text-sm md:text-base">
+        Aprovechá el precio de lanzamiento y empezá hoy mismo tu transformación.
+      </p>
 
+      <a
+        href="https://pay.hotmart.com/TU_LINK_INDIVIDUAL?utm_source=site&utm_medium=btn&utm_campaign=cta_final"
+        class="mt-6 inline-block px-8 py-4 rounded-2xl bg-black text-white hover:opacity-90 shadow-lg shadow-black/10 text-lg font-semibold transition"
+      >
+        🚀 Comprar ahora por $5.99
+      </a>
 
+      <p class="mt-3 text-xs text-neutral-500">
+        Acceso inmediato · PDF en tu email · Garantía 7 días
+      </p>
+    </div>
+  </div>
+</section>
 
   <footer class="border-t border-neutral-200 py-10 text-center text-sm text-neutral-500">
     © <span id="year"></span> Mi Mejor Yo
   </footer>
+
+  <!-- CTA flotante móvil (aparece al scrollear) -->
+  <div id="ctaFloat" class="fixed inset-x-0 bottom-0 z-50 md:hidden translate-y-full transition-transform">
+    <div class="mx-auto max-w-5xl px-4 pb-4">
+      <div class="rounded-2xl bg-black text-white shadow-2xl">
+        <button id="ctaFloatBtn" class="w-full flex items-center justify-between px-4 py-3">
+          <span class="font-semibold">Comprar ahora</span>
+          <span class="text-sm bg-white/10 rounded-md px-3 py-1">$5.99</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script>
     document.getElementById('year').textContent=new Date().getFullYear();
@@ -205,5 +345,68 @@
       });
     });
   </script>
+
+  <!-- Countdown 4 horas (persistente por visitante) -->
+  <script>
+  (function(){
+    const key='launchOfferDeadline4h';
+    let deadline = parseInt(localStorage.getItem(key)||'0',10);
+    if(!deadline || Date.now()>deadline){
+      deadline = Date.now() + 4*60*60*1000; // 4 horas
+      localStorage.setItem(key,String(deadline));
+    }
+    const el = document.getElementById('countdown');
+    const pad = n => String(n).padStart(2,'0');
+    const tick = () => {
+      if (!el) return;
+      const t = deadline - Date.now();
+      if (t <= 0){ el.textContent = 'minutos'; return; }
+      const h = Math.floor(t/(1000*60*60));
+      const m = Math.floor((t%(1000*60*60))/(1000*60));
+      el.textContent = `${pad(h)}:${pad(m)} hs`;
+    };
+    tick();
+    setInterval(tick, 60000); // cada 1 min
+  })();
+  </script>
+
+  <!-- Lógica CTA flotante móvil -->
+  <script>
+  (function(){
+    const bar = document.getElementById('ctaFloat');
+    const btn = document.getElementById('ctaFloatBtn');
+    const offer = document.getElementById('oferta');
+    const footer = document.querySelector('footer');
+    const showAt = 0.35; // aparece tras 35% de scroll
+
+    const onScroll = () => {
+      const y = window.scrollY || document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = h>0 ? y/h : 0;
+
+      const offerRect = offer?.getBoundingClientRect();
+      const footerRect = footer?.getBoundingClientRect();
+      const nearOffer = offerRect && offerRect.top < window.innerHeight * 0.8;
+      const nearFooter = footerRect && footerRect.top < window.innerHeight * 0.9;
+
+      bar.style.transform = (ratio > showAt && !nearOffer && !nearFooter) ? 'translateY(0)' : 'translateY(100%)';
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    btn?.addEventListener('click', () => {
+      document.querySelector('#oferta')?.scrollIntoView({behavior:'smooth'});
+      if (window.fbq) fbq('track','AddToCart',{content_name:'La Pobreza Empieza en la Mente'});
+    });
+  })();
+  </script>
+
+<script>
+document.querySelectorAll('img:not([data-priority])').forEach(img=>{
+  img.setAttribute('loading','lazy');
+  img.setAttribute('decoding','async');
+});
+</script>
+
 </body>
 </html>
