@@ -39,6 +39,14 @@
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=3240688932750486&ev=PageView&noscript=1"/></noscript>
 
+      <script>
+  // ViewContent de HOME (no del producto)
+  fbq('track', 'ViewContent', {
+    content_name: 'Home - Mi Mejor Yo',
+    content_category: 'Ebooks',
+    content_type: 'product_group'
+  });
+</script>
     <style>
       .lead { font-size: 1.125rem; line-height: 1.7; }
     </style>
@@ -649,6 +657,36 @@ document.querySelectorAll('img:not([data-priority])').forEach(img=>{
   img.setAttribute('decoding','async');
 });
 </script>
+
+<script>
+  (function () {
+    // Parámetros consistentes para tu producto
+    const IC_PARAMS = {
+      value: 5.99,
+      currency: 'USD',
+      contents: [{ id: 'pobreza-mente', quantity: 1 }],
+      content_type: 'product'
+    };
+
+    function sendInitiateCheckout(href, e) {
+      if (window.fbq) fbq('track', 'InitiateCheckout', IC_PARAMS);
+      // pequeño delay para asegurar el envío antes de salir al checkout
+      if (e) e.preventDefault();
+      setTimeout(() => { window.location.href = href; }, 180);
+    }
+
+    // Captura todos los enlaces al checkout de Hotmart
+    document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        // Solo clicks izquierdos (para no romper abrir en nueva pestaña con botón medio)
+        if (e.button === 0 && !e.metaKey && !e.ctrlKey) {
+          sendInitiateCheckout(a.href, e);
+        }
+      });
+    });
+  })();
+</script>
+
 
   </body>
 </html>
