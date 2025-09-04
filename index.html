@@ -39,12 +39,34 @@
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=3240688932750486&ev=PageView&noscript=1"/></noscript>
 
+<script>
+  // Guarda y recupera el fbclid (para usarlo en todos los eventos)
+  (function () {
+    function getFBClickID() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const fbclid = params.get('fbclid');
+        if (fbclid) {
+          localStorage.setItem('fbclid', fbclid); // persiste entre páginas
+          return fbclid;
+        }
+        return localStorage.getItem('fbclid') || '';
+      } catch (e) {
+        return '';
+      }
+    }
+    window.getFBC = getFBClickID; // disponible globalmente
+  })();
+</script>
+
+    
       <script>
   // ViewContent de HOME (no del producto)
   fbq('track', 'ViewContent', {
     content_name: 'Home - Mi Mejor Yo',
     content_category: 'Ebooks',
-    content_type: 'product_group'
+    content_type: 'product_group',
+    fbc: window.getFBC && window.getFBC()
   });
 </script>
     <style>
@@ -671,7 +693,7 @@ document.querySelectorAll('img:not([data-priority])').forEach(img=>{
     };
 
     function sendInitiateCheckout(href, e) {
-      if (window.fbq) fbq('track', 'InitiateCheckout', IC_PARAMS);
+      if (window.fbq) fbq('track', 'InitiateCheckout', { ...IC_PARAMS, fbc: window.getFBC && window.getFBC() });
       // pequeño delay para asegurar el envío antes de salir al checkout
       if (e) e.preventDefault();
       setTimeout(() => { window.location.href = href; }, 180);
