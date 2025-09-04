@@ -96,14 +96,6 @@
       </div>
       <div class="font-semibold">Mi Mejor Yo</div>
     </div>
-
-    <!-- Botón WhatsApp -->
-    <a href="https://chat.whatsapp.com/BrZdGZgFgvFGku4WMp8VPQ?mode=ems_wa_c" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold text-sm shadow hover:bg-emerald-700 transition">
-      Unirse al Grupo de WhatsApp
-    </a>
   </div>
 </header>
 
@@ -262,6 +254,56 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA · Unirse al grupo de WhatsApp -->
+<section class="mx-auto max-w-5xl px-4 py-8">
+  <div class="rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-cyan-50 p-6 md:p-8 shadow-sm">
+    <div class="flex items-start gap-4">
+      <div class="h-10 w-10 shrink-0 rounded-2xl bg-emerald-600 text-white grid place-content-center text-xl">💬</div>
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-900">
+          Sumate a la comunidad en WhatsApp
+        </h2>
+        <p class="mt-2 text-neutral-700">
+          Retos de 30 días, hábitos, foco y progreso con gente en la misma sintonía.
+        </p>
+        <ul class="mt-4 text-sm text-neutral-800 space-y-1">
+          <li>• Recordatorios y micro-desafíos semanales.</li>
+          <li>• Tips accionables y seguimiento.</li>
+          <li>• 100% crecimiento.</li>
+        </ul>
+
+        <a
+          id="cta-whatsapp-join"
+          href="https://chat.whatsapp.com/BrZdGZgFgvFGku4WMp8VPQ?mode=ems_wa_c"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-5 inline-flex items-center gap-2 rounded-2xl bg-black px-5 py-3 text-white font-semibold shadow hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          aria-label="Unirme al grupo de WhatsApp"
+        >
+          Unirme ahora
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <p class="mt-2 text-[11px] text-neutral-500">
+          Gratis · Respeto y buen clima
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tracking Meta (opcional): Contact + fbc -->
+<script>
+  document.getElementById('cta-whatsapp-join')?.addEventListener('click', function () {
+    try {
+      if (window.fbq) {
+        fbq('track', 'Contact', { fbc: window.getFBC && window.getFBC() });
+      }
+    } catch(e) {}
+  });
+</script>
+
 
     <!-- Catálogo -->
     <section class="mx-auto max-w-5xl px-4 pb-14">
